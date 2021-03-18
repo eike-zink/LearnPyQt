@@ -8,6 +8,8 @@ from PyQt5.QtSql import QSqlDatabase, QSqlTableModel
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTableView
 
 db = QSqlDatabase("QSQLITE")
+# ACHTUNG: Der Aufruf des Programms in VSCode hat einen Einfluss auf
+# das Verzeichnis, in dem die SQLite-Datenbank gesucht wird
 db.setDatabaseName("chinook.sqlite")
 db.open()
 
