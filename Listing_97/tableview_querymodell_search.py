@@ -75,8 +75,6 @@ class MainWindow(QMainWindow):
         self.model.setQuery(self.query)
 
 
-
-
 app = QApplication(sys.argv)
 
 window = MainWindow()
