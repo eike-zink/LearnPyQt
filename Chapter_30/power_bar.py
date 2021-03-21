@@ -84,6 +84,7 @@ class PowerBar(QtWidgets.QWidget):
             raise TypeError("Steps mus be a list (of colors) or int")
 
         self._dial = QtWidgets.QDial()
+        self._dial.setNotchesVisible(True)
         self._bar = _Bar(self._steps)
         self._bar.clickedValue.connect(self._dial.setValue)
         self._dial.valueChanged.connect(self._bar.update_bar)
